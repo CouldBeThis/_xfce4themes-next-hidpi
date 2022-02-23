@@ -1,28 +1,11 @@
-
-
-
-
-##How the pixmap are arranged in the title bar.
-## When set to “true”, the center pixmap is repeated so that it fills the entire window width
-## When set to “false”, the center pixmap is repeated just enough so that the title fits
-full_width_title=false
-
-## shift buttons horizontally. value is relative to the corresponding application window border, not the frame border.
-button_offset=0
-
-
-## XFWM Versions 4.14.1 only
-## crop the top frame border of maximized application windows.
-frame_border_top=0
-
+##############################################
+## THEMERC
+##############################################
 
 
 ## docs say: places a space between the right edge (top-right-active) and the button (close, hide…) when maximized.
 ## but actually spaces between right AND left edge and buttons.
 maximized_offset=10
-
-## space between each button
-button_spacing=0
 
 active_border_color=#000000
 inactive_border_color=#000000
@@ -40,7 +23,22 @@ title_vertical_offset_inactive=2
 ## show the application icon (true) or the theme-provided menu button (false))
 show_app_icon=false
 
+## space between each button
+button_spacing=0
 
+##How the pixmap are arranged in the title bar.
+## When set to “true”, the center pixmap is repeated so that it fills the entire window width
+## When set to “false”, the center pixmap is repeated just enough so that the title fits
+full_width_title=false
 
+## shift buttons horizontally. value is relative to the corresponding application window border, not the frame border.
+button_offset=0
+
+## XFWM Versions 4.14.1 only
+## crop the top frame border of maximized application windows.
+frame_border_top=0
+
+##############################################
 ## documentation of this file and xfwm themes: 
 ## https://wiki.xfce.org/howto/xfwm4_theme
+##############################################
