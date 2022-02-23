@@ -17,11 +17,11 @@ Basically, compared to the original:
 
 ## Screenshot
 
-!["original on top vs my edits on the bottom"]("screenshots/screenshot-Trench-original-vs-CouldBeThis-Industrial.png")
+!["original on top vs my edits on the bottom"](screenshots/screenshot-Trench-original-vs-CouldBeThis-Industrial.png)
 
 original on top vs my edits on the bottom
 
-!["Trench-2022 with MurrinaFancyCandy GTK theme"]("screenshots/screenshot-Trench-CouldBeThis-MurrinaFancyCandy.png")
+!["Trench-2022 with MurrinaFancyCandy GTK theme"](screenshots/screenshot-Trench-CouldBeThis-MurrinaFancyCandy.png)
 
 
 Trench-2022 with MurrinaFancyCandy GTK theme
