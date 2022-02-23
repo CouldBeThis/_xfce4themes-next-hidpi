@@ -7,9 +7,9 @@ I am running an older version of `XFCE` and it is my understanding that those ru
 ## Breadcrumbs
 
 
- * I forked the full repo to [CouldBeThis/xfwm4-themes](https://github.com/CouldBeThis/xfwm4-themes). To avoid duplication and confusion, I am only moving those themes over to here which I am working on. 
+ * I forked the full collection to [CouldBeThis/xfwm4-themes](https://github.com/CouldBeThis/xfwm4-themes). To avoid duplication and confusion, I am only moving those themes over to here which I am working on. 
  
- * Upstream repo was [Distrotech/xfwm4-themes](https://github.com/Distrotech/xfwm4-themes); it is a mirror of a repo that no longer exists, though it is [archived](https://git.xfce.org/archive/xfwm4-themes). [Discussion](https://askubuntu.com/questions/1184207/where-can-i-get-xfwm4-themes-on-xubuntu-19-10)
+ * Upstream was [Distrotech/xfwm4-themes](https://github.com/Distrotech/xfwm4-themes); it is a mirror of a repo that no longer exists, though it is [archived](https://git.xfce.org/archive/xfwm4-themes). [Discussion](https://askubuntu.com/questions/1184207/where-can-i-get-xfwm4-themes-on-xubuntu-19-10)
 
 ## References
 
