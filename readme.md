@@ -21,6 +21,8 @@ Basically, compared to the original:
 
 !["original on top vs my edits on the bottom"](screenshots/screenshot-Trench-original-vs-CouldBeThis-Industrial.png)
 
+![](screenshots/screenshot-Trench-original-vs-CouldBeThis-Industrial-transp.png)
+
 **screenshot-Trench-CouldBeThis-MurrinaFancyCandy.png:**
 
 !["Trench-2022 with MurrinaFancyCandy GTK theme"](screenshots/screenshot-Trench-CouldBeThis-MurrinaFancyCandy.png)
