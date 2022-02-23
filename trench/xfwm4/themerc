@@ -7,8 +7,8 @@
 ## but actually spaces between right AND left edge and buttons.
 maximized_offset=10
 
-active_border_color=#000000
-inactive_border_color=#000000
+# active_border_color=#000000
+# inactive_border_color=#000000
 
 ## shadow behind the title text (hard to read)
 title_shadow_inactive=false
