@@ -3,8 +3,13 @@ button_offset=0
 button_spacing=0
 active_border_color=#000000
 inactive_border_color=#000000
+
 title_shadow_inactive=false
 title_shadow_active=false
+
 title_horizontal_offset=0
 title_vertical_offset_active=2
 title_vertical_offset_inactive=2
+
+# show the application icon (true) or the theme-provided menu button (false))
+show_app_icon=false
