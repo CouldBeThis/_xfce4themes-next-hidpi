@@ -27,6 +27,9 @@ Basically, compared to the original:
 
 !["Trench-2022 with MurrinaFancyCandy GTK theme"](screenshots/screenshot-Trench-CouldBeThis-MurrinaFancyCandy.png)
 
+## Other components
+
+The titlebar uses the bitmap font `aqui`. It is available from [Tecate/bitmap-fonts](https://github.com/Tecate/bitmap-fonts). FOr some reason it isn't listed on the README but it is available as both [`.bdf`](https://github.com/Tecate/bitmap-fonts/blob/master/bitmap/artwiz/bdf/aqui.bdf) and [`.pcf`](https://github.com/Tecate/bitmap-fonts/blob/master/bitmap/artwiz/pcf/aqui.pcf). It is only available in one size (9pts). I find that unreadably small on a desktop monitor but on my tiny netbook screen it is perfect. 
 
 ## Breadcrumbs
 
