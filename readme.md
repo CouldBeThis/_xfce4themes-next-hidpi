@@ -15,6 +15,18 @@ Basically, compared to the original:
 
  * Titlebar text slightly adjusted so that it is centred vertically using my font of choice `aqui`
 
+## Screenshot
+
+!["original on top vs my edits on the bottom"]("screenshots/screenshot-Trench-original-vs-CouldBeThis-Industrial.png")
+
+original on top vs my edits on the bottom
+
+!["Trench-2022 with MurrinaFancyCandy GTK theme"]("screenshots/screenshot-Trench-CouldBeThis-MurrinaFancyCandy.png")
+
+
+Trench-2022 with MurrinaFancyCandy GTK theme
+
+
 ## Breadcrumbs
 
 Where the foundations came from:
