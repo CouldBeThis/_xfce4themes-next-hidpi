@@ -4,7 +4,16 @@ I like the old school `XFCE` themes but have a few changes to make.
 
 I am running an older version of `XFCE` and it is my understanding that those running more modern versions will not be able to use these themes either at all or reliably. 
 
-## 
+## Trench-2022
+
+My version of the classic `XFCE` theme `trench`.
+Basically, compared to the original:
+
+ * Inactive windows are no longer totally plain, but instead have light lines and action icons which are similar to the active window's titlebar
+
+   * The inactive icons lack shadows present in the active icons; I felt these were too busy. There is a branch where this is available if anyone wants it.
+
+ * Titlebar text slightly adjusted so that it is centred vertically using my font of choice `aqui`
 
 ## Breadcrumbs
 
