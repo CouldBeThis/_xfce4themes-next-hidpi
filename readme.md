@@ -4,8 +4,11 @@ I like the old school `XFCE` themes but have a few changes to make.
 
 I am running an older version of `XFCE` and it is my understanding that those running more modern versions will not be able to use these themes either at all or reliably. 
 
+## 
+
 ## Breadcrumbs
 
+Where the foundations came from:
 
  * I forked the full collection to [CouldBeThis/xfwm4-themes](https://github.com/CouldBeThis/xfwm4-themes). To avoid duplication and confusion, I am only moving those themes over to here which I am working on. 
  
