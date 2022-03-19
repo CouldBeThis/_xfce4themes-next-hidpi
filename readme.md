@@ -4,7 +4,23 @@ I like the old school `XFCE` themes but have a few changes to make.
 
 I am running an older version of `XFCE` and it is my understanding that those running more modern versions will not be able to use these themes either at all or reliably. 
 
-## Trench-2022
+## Install 
+
+Not very fancy. For other options
+
+1. Clone repo
+
+2. Run the `install.sh` to install for all users (requires password). Or copy manuallu to `~/.themes` or other theme directory.
+
+3. Open `Window Manager` settings panel to select. 
+
+```zsh
+git clone git@github.com:CouldBeThis/_xfce4themes.git CouldBeThis_xfcethemes
+cd CouldBeThis_xfcethemes/themes
+sudo ./install.sh
+```
+
+## `2022 Trench`
 
 My version of the classic `XFCE` theme `trench`.
 Basically, compared to the original:
