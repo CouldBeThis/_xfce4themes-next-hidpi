@@ -19,8 +19,9 @@ git clone git@github.com:CouldBeThis/_xfce4themes.git CouldBeThis_xfcethemes
 cd CouldBeThis_xfcethemes/themes
 sudo ./install.sh
 ```
+## Themes
 
-## `2022 Trench`
+### `2022 Trench`
 
 My version of the classic `XFCE` theme `trench`.
 Basically, compared to the original:
@@ -31,7 +32,7 @@ Basically, compared to the original:
 
  * Titlebar text slightly adjusted so that it is centred vertically using my font of choice `aqui`
 
-## Screenshot
+#### Screenshot
 
 **screenshot-Trench-CouldBeThis-MurrinaFancyCandy.png:**
 
@@ -43,11 +44,20 @@ Basically, compared to the original:
 
 !["Trench-2022 with MurrinaFancyCandy GTK theme"](screenshots/screenshot-Trench-CouldBeThis-MurrinaFancyCandy.png)
 
-## Other components
+### Other components
 
 The titlebar uses the bitmap font `aqui`. It is available from [Tecate/bitmap-fonts](https://github.com/Tecate/bitmap-fonts). FOr some reason it isn't listed on the README but it is available as both [`.bdf`](https://github.com/Tecate/bitmap-fonts/blob/master/bitmap/artwiz/bdf/aqui.bdf) and [`.pcf`](https://github.com/Tecate/bitmap-fonts/blob/master/bitmap/artwiz/pcf/aqui.pcf). It is only available in one size (9pts). I find that unreadably small on a desktop monitor but on my tiny netbook screen it is perfect.
 
 An extremely viable alternative bitmap font that comes in a variety of sizes is [TamzenForPowerline](https://github.com/sunaku/tamzen-font).
+
+### `2022 Slimline`
+
+My version of the classic `XFCE` theme `slimline`.
+Basically, compared to the original:
+
+#### Screenshots 
+
+(TBD)
 
 ## Breadcrumbs
 
