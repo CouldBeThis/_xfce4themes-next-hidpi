@@ -52,12 +52,9 @@ An extremely viable alternative bitmap font that comes in a variety of sizes is 
 
 ### `2022 Slimline`
 
-My version of the classic `XFCE` theme `slimline`.
-Basically, compared to the original:
+My version of the classic `XFCE` theme `slimline`. 
 
-#### Screenshots 
-
-(TBD)
+*Lost some of my work on this. TBD later.*
 
 ## Breadcrumbs
 
