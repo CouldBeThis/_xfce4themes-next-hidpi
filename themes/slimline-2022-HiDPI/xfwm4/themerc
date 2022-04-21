@@ -1,8 +1,15 @@
 full_width_title=true
 button_offset=0
-button_spacing=1
+button_spacing=5
 active_border_color=#000000
 inactive_border_color=#000000
+
+# The title text position can be adjusted to fit the theme design by using the offset values.
+# vertical: positive value moves text down, negative moves it up
+title_horizontal_offset=0
+title_vertical_offset_active=-2
+title_vertical_offset_inactive=-2
+
 
 ## button_layout :
 ##    O = Option menu

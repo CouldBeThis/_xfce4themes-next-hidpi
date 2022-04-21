@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Slimline2022
-Comment=A GTK theme based on Slimeline and Solaris 9
+Name=Slimline2022 (HiDPI)
+Comment=A GTK theme based on Slimeline
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Slimline2022
-MetacityTheme=Slimline2022
+GtkTheme=Slimline2022HiDPI
+MetacityTheme=Slimline2022HiDPI
 IconTheme=CDE
 CursorTheme=DMZ-Black
 ButtonLayout=close,minimize,maximize:
