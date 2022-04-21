@@ -52,16 +52,20 @@ An extremely viable alternative bitmap font that comes in a variety of sizes is 
 
 ### `2022 Slimline`
 
-My version of the classic `XFCE` theme `slimline`. 
+My version of the classic `XFCE` theme `slimline`. Slight tweaks.
 
 *Lost some of my work on this. TBD later.*
+
+### 2022 Slimline (HiDPI)
+
+The `2022 slimline` theme with a couple of fixes and scaled up to be nice to use on a HiDPI screen. 
 
 ## Breadcrumbs
 
 Where the foundations came from:
 
  * I forked the full collection to [CouldBeThis/xfwm4-themes](https://github.com/CouldBeThis/xfwm4-themes). To avoid duplication and confusion, I am only moving those themes over to here which I am working on. 
- 
+
  * Upstream was [Distrotech/xfwm4-themes](https://github.com/Distrotech/xfwm4-themes); it is a mirror of a repo that no longer exists, though it is [archived](https://git.xfce.org/archive/xfwm4-themes). Some [discussion](https://askubuntu.com/questions/1184207/where-can-i-get-xfwm4-themes-on-xubuntu-19-10) of this.
 
 ## References
@@ -72,7 +76,6 @@ Where the foundations came from:
 
   * [howto:gtk_theme](https://wiki.xfce.org/howto/gtk_theme)
   * [p0ngbr/xfce-themes: Some xfwm4 themes](https://github.com/p0ngbr/xfce-themes) - another collection of themes (not reviewed)
-
 
 
 
