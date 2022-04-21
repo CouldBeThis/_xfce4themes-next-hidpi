@@ -1,8 +1,8 @@
 full_width_title=true
 button_offset=0
 button_spacing=5
-active_border_color=#000000
-inactive_border_color=#000000
+#active_border_color=#000000
+#inactive_border_color=#000000
 
 # The title text position can be adjusted to fit the theme design by using the offset values.
 # vertical: positive value moves text down, negative moves it up
