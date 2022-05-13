@@ -1,0 +1,4 @@
+[submodule "themes/lwaxana"]
+	path = themes/lwaxana
+	url = git@github.com:CouldBeThis/lwaxana.git
+	branch = main
