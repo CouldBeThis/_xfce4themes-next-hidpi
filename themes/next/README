@@ -1,4 +1,6 @@
-next
+next - 36px
 ----
 
 This theme is a port of original Oroborus theme of the same name.
+
+2022 update: this version from github.com/CouldBeThis increases the height of titlebar to 36px to be useable on HDPI displays.
