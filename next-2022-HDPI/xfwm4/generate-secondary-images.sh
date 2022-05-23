@@ -75,6 +75,7 @@
 ## change filenames
 ##	-	must include the backslash escape or will give error
 ##		(even with double quotes)
+#
 # rename "\-active" "\-inactive" *
 
 ## Run find/replace
@@ -93,7 +94,7 @@
 ## 			static char * close_inactive_xpm[] = {
 
 sed -i \
--e 's/s active_/s inactive_"/g' \
+-e 's/s active_/s inactive_/g' \
 -e 's/_active_xpm/_inactive_xpm/g' \
 *-inactive.xpm
 
