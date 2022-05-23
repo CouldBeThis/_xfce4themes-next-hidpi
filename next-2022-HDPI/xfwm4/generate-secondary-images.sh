@@ -17,7 +17,11 @@
 	# "@	c #000044",
 	# "#	c #FFFFFF",
 		## FIND (same as above, but regex compliant):
-		# "\s+c #000000",\n"\.\s+c #0000EE",\n"\+\s+c #000088",\n"\@\s+c #000044",\n"\#\s+c #FFFFFF",\n
+		# "\s+c #000000",
+		# "\.\s+c #0000EE",
+		# "\+\s+c #000088",
+		# "\@\s+c #000044",
+		# "\#\s+c #FFFFFF",
 	##
 	## REPLACE WITH (in plain text) ->
 	# " 	c #000000",
@@ -27,6 +31,21 @@
 	# "#	c #FFFFFF s active_text_color",
 		## REPLACE  (same as above, but regex compliant):
 		# "\ \tc #000000",\n"\.\tc #0000EE s active_hilight_1",\n"\+\tc #000088 s active_color_1",\n"\@\tc #000044 s active_shadow_1",\n"\#\tc #FFFFFF s active_text_color",\n
+
+
+# setting colors
+sed -i \
+-e 's/c #5080D0"/c #5080D0 s active_color_1"/g' \
+-e 's/FIND/REPLACE/g' \
+
+sed -e 's/#0000EE/#0000EE s active_hilight_1/g' \
+
+
+
+
+
+
+
 
 
 
