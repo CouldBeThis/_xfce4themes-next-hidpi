@@ -77,18 +77,29 @@
 ##		(even with double quotes)
 # rename "\-active" "\-inactive" *
 
-## Determine the appropriate find/replace strings (look in files)
-##	-	Will leave char symbols the same, only change the color codes
+## Run find/replace
+##	-	Will leave color codes the same, only change the GTK
+##		color pickups
+##	-	Therefor: if the theme is ever applied without colors
+##		being defined externally, there would be no difference
+##		between active and inactive colors
+##	Two things being done here:
+## 		1. change the GTK color pickup names from active to
+##		inactive
+## 		2. change the first non-commented line of file, for
+##		example:
+## 			static char * close_active_xpm[] = {
+## 			REPLACE W-->
+## 			static char * close_inactive_xpm[] = {
+#
+# sed -i \
+# -e 's/s active_"/s inactive_"/g' \
+# -e 's/_active_xpm"/_inactive_xpm"/g' \
+# *-inactive.xpm
 
 
-sed -i \
--e 's/s active_"/s inactive_"/g' \
--e 's/_active_xpm"/_inactive_xpm"/g' \
-*-inactive.xpm
 
-
-
-## TODO: change filenames
+## TODO: change filenames defined in files
 
 ## TODO: ====== move all files into main theme directory ====== ##
 
