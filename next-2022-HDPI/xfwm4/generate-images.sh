@@ -7,7 +7,7 @@
 ## ====== text styles ====== ##
 	## Set some colors
 	StyleFGBlue=$(tput setaf 4)		# text			= blue
-	StyleFGBrWhite=$(tput setaf 15)	# text 			= bright white
+	StyleFGMagenta=$(tput setaf 5)	# text			= magenta
 	StyleBGWhite=$(tput setab 7)	# background	= white
 	StyleBGBlue=$(tput setab 4)		# background	= blue
 ## make all the output text blue
