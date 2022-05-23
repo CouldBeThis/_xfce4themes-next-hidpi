@@ -5,7 +5,7 @@ static char * maximize_inactive_xpm[] = {
 ".	c #0000EE s inactive_hilight_1",
 "+	c #000044 s inactive_shadow_1",
 "@	c #000088 s inactive_color_1",
-"#	c #FFFFFF s inactive_text_color",
+"#	c #FFFFFF s inactive_hilight_2",
 "                                    ",
 " .................................. ",
 " .................................+ ",
