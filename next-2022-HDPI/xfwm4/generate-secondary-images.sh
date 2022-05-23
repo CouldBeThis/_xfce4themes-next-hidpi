@@ -34,12 +34,12 @@
 
 
 # setting colors
+## https://blockofcode.wordpress.com/2009/02/09/making-a-theme-for-xfwm4/
 sed -i \
 -e 's/c #5080D0"/c #5080D0 s active_color_1"/g' \
 -e 's/FIND/REPLACE/g' \
 
-sed -e 's/#0000EE/#0000EE s active_hilight_1/g' \
-
+sed -e 's/#0000EE/#0000EE s active_hilight_1/g' *-active.xpm
 
 
 
