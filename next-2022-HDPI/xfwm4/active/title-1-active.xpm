@@ -2,9 +2,9 @@
 static char * title_1_active_xpm[] = {
 "36 36 4 1",
 " 	c #000000",
-".	c #0000EE",
-"+	c #000088",
-"@	c #000044",
+".	c #0000EE s active_hilight_1",
+"+	c #000088 s active_color_1",
+"@	c #000044 s active_shadow_1",
 "                                    ",
 "                                    ",
 "....................................",
