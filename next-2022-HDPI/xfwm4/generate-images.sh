@@ -5,13 +5,6 @@
 ## https://blockofcode.wordpress.com/2009/02/09/making-a-theme-for-xfwm4/
 
 ## ====== text styles ====== ##
-	## Bold
-	StyleBold=$(tput smso)
-	StyleBoldOff=$(tput rmso)
-	## Reverse
-	StyleRev=$(tput rev)
-	## reset all attributes
-	StyleAllOff=$(tput sgr0)
 	## Set some colors
 	StyleFGBlue=$(tput setaf 4)		# text			= blue
 	StyleFGBrWhite=$(tput setaf 15)	# text 			= bright white
