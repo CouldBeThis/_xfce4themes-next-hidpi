@@ -85,14 +85,21 @@ cd active
 ##		put into the main command only once
 ##	-	NOTE this is duplicated for the *-pressed.xpm files below,
 ##	-	any changes shouldbe updated there as well.
-echo " * adding GTK color pickup to known colors"
+echo " * adding GTK color pickup to known colors (active)"
 sed -i \
 -e 's/FIND"/REPLACE"/g' \
 -e 's/#0000EE"/#0000EE s active_hilight_1"/g' \
 -e 's/#000088"/#000088 s active_color_1"/g' \
 -e 's/#000044"/#000044 s active_shadow_1"/g' \
--e 's/#FFFFFF"/#FFFFFF s active_text_color"/g' \
+-e 's/#FFFFFF"/#FFFFFF s active_hilight_2"/g' \
+-e 's/#BFBFBF"/#BFBFBF s active_color_2"/g' \
+-e 's/#8F8F8F"/#8F8F8F s active_shadow_2"/g' \
 *-active.xpm
+## not added from bottom-active:
+# "+	c #FFFFFF s active_hilight_2",
+# -e 's/#FFFFFF"/#FFFFFF s active_text_color"/g' \
+
+
 
 ## ====== create the inactive images ====== ##
 
@@ -119,7 +126,7 @@ pwd
 echo " * rename all these files from *-active.xpm to *-inactive.xpm"
 rename "active" "inactive" *
 # exa
-
+#
 ## Run find/replace
 ##	-	Will leave color codes the same, only change the GTK
 ##		color pickups
@@ -142,18 +149,24 @@ sed -i \
 
 
 ## Find and replace the color definition headers in images
-##	-	must leave trailing double quote to prevent the operation
-## 		accidentaly being run more than once on the same line; the
-## 		double quote indicates the *definate* end of the line
-## 	-	must leave the -e at start of each line; it won't work if
-##		put into the main command only once
-# sed -i \
-# -e 's/FIND"/REPLACE"/g' \
-# -e 's/#0000EE"/#0000EE s active_hilight_1"/g' \
-# -e 's/#000088"/#000088 s active_color_1"/g' \
-# -e 's/#000044"/#000044 s active_shadow_1"/g' \
-# -e 's/#FFFFFF"/#FFFFFF s active_text_color"/g' \
-# *-active.xpm
+##	-	in contrast to the sed line used for *-active.xpm, this one is different in that it replaces the entire rest of the matching line, rather than the matching part only. This is done to overwrite colors defined already in *-active.xpm where there is a conflict.
+echo " * adding GTK color pickup to known colors (inactive)"
+sed -i \
+-e 's/FIND"/REPLACE"/g' \
+-e 's/#FFFFFF.*/#FFFFFF s inactive_hilight_2",/g' \
+-e 's/#BFBFBF.*/#BFBFBF s inactive_color_2",/g' \
+-e 's/#8F8F8F.*/#8F8F8F s inactive_shadow_2",/g' \
+*-inactive.xpm
+
+
+# " 	c #000000",
+# ".	c #FFFFFF s inactive_text_color",
+# "+	c #BFBFBF s inactive_color_2",
+# "@	c #8F8F8F s inactive_shadow_2",
+#
+# "+	c #FFFFFF s inactive_hilight_2",
+# "@	c #BFBFBF s inactive_color_2",
+# "#	c #8F8F8F s inactive_shadow_2",
 
 
 ## ====== create the beginings for pressed images ====== ##
