@@ -2,7 +2,7 @@
 static char * bottom_left_active_xpm[] = {
 "46 14 4 1",
 " 	c #000000",
-".	c #FFFFFF",
+".	c #FFFFFF s active_text_color",
 "+	c #BFBFBF",
 "@	c #8F8F8F",
 "                                              ",
