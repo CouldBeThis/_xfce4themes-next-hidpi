@@ -1,0 +1,31 @@
+static char * close_active_xpm[] = {
+"21 21 6 1",
+" 	c None",
+".	c #000000",
+"+	c #0000EE s active_hilight_1",
+"@	c #000088 s active_color_1",
+"#	c #000044 s active_shadow_1",
+"$      c #FFFFFF s active_text_color",
+
+
+static char * close_inactive_xpm[] = {
+"21 21 6 1",
+" 	c None",
+".	c #000000",
+"+	c #FFFFFF s inactive_hilight_1",
+"@	c #BFBFBF s inactive_color_1",
+"#	c #8F8F8F s inactive_shadow_1",
+"$      c #888888 s inactive_text_color",
+
+static char * close_pressed_xpm[] = {
+"21 21 3 1",
+" 	c None",
+".	c #000000",
+"+	c #FFFFFF",
+
+
+
+
+
+
+
