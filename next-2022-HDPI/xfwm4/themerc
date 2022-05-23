@@ -5,7 +5,7 @@
 
 ## docs say: places a space between the right edge (top-right-active) and the button (close, hide…) when maximized.
 ## but actually spaces between right AND left edge and buttons.
-maximized_offset=10
+# maximized_offset=10
 
 ## force border color to be black for those themes where this is not the case
 ## left in file because sometimes it makes sense to toggle on
