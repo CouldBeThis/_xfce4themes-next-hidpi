@@ -82,8 +82,8 @@
 
 
 sed -i \
--e 's/ active_"/ inactive_"/g' \
--e 's/ _active_xpm"/ _inactive_xpm"/g' \
+-e 's/s active_"/s inactive_"/g' \
+-e 's/_active_xpm"/_inactive_xpm"/g' \
 *-inactive.xpm
 
 
