@@ -165,44 +165,45 @@ sed -i \
 ## ====== create the beginings for pressed images ====== ##
 #
 ## go back to parent directory
-echo " * returning to base theme direcory $ThemeDir"
-cd $ThemeDir
-
-## delete any existing pressed/ directory
-echo " * trash existing pressed/ directory, if present"
-trash pressed
-## duplicate the active/ directory to pressed/
-echo " * copy active/ to pressed/ and enter directory"
-cp -r active pressed
-## enter inactive directory
-cd pressed
-pwd
-
-## change filenames
-# exa
-echo " * rename all these files from *-active.xpm to *-pressed.xpm"
-rename "active" "pressed" *
-# exa
+# echo " * returning to base theme direcory $ThemeDir"
+# cd $ThemeDir
 #
-## Run find/replace
-##	-	Will leave color codes the same, only change the GTK
-##		color pickups
-##	-	Therefor: if the theme is ever applied without colors
-##		being defined externally, there would be no difference
-##		between active and inactive colors
-##	In contrast to creating the *-inactive state images, only ONE
-##	 thing being done here:
-## 		1. change the first non-commented line of file, for
-##		example:
-## 			static char * close_active_xpm[] = {
-## 			REPLACE W-->
-## 			static char * close_pressed_xpm[] = {
-##	The colors REMAIN THE SAME - edit the actual image so it changes,
-##	rather than the colors.
-echo " * Just changing the filename as mentioned inside the file itself"
-sed -i \
--e 's/_active_xpm/_inactive_xpm/g' \
-*-pressed.xpm
+# ## delete any existing pressed/ directory
+# echo " * trash existing pressed/ directory, if present"
+# trash pressed
+# ## duplicate the active/ directory to pressed/
+# echo " * copy active/ to pressed/ and enter directory"
+# cp -r active pressed
+# ## enter inactive directory
+# cd pressed
+# pwd
+#
+# ## change filenames
+# # exa
+# echo " * rename all these files from *-active.xpm to *-pressed.xpm"
+# rename "active" "pressed" *
+# # exa
+# #
+# ## Run find/replace
+# ##	-	Will leave color codes the same, only change the GTK
+# ##		color pickups
+# ##	-	Therefor: if the theme is ever applied without colors
+# ##		being defined externally, there would be no difference
+# ##		between active and inactive colors
+# ##	In contrast to creating the *-inactive state images, only ONE
+# ##	 thing being done here:
+# ## 		1. change the first non-commented line of file, for
+# ##		example:
+# ## 			static char * close_active_xpm[] = {
+# ## 			REPLACE W-->
+# ## 			static char * close_pressed_xpm[] = {
+# ##	The colors REMAIN THE SAME - edit the actual image so it changes,
+# ##	rather than the colors.
+# echo " * Just changing the filename as mentioned inside the file itself"
+# sed -i \
+# -e 's/_active_xpm/_inactive_xpm/g' \
+# *-pressed.xpm
+#
 
 ## Find and replace the color definition headers in images
 ##	-	see notes in section where sed is first used, above
