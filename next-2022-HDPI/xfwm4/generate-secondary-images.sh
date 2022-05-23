@@ -53,6 +53,8 @@
 ## 		double quote indicates the *definate* end of the line
 ## 	-	must leave the -e at start of each line; it won't work if
 ##		put into the main command only once
+##	-	NOTE this is duplicated for the *-pressed.xpm files below,
+##	-	any changes shouldbe updated there as well.
 # sed -i \
 # -e 's/FIND"/REPLACE"/g' \
 # -e 's/#0000EE"/#0000EE s active_hilight_1"/g' \
@@ -114,7 +116,58 @@
 # *-active.xpm
 
 
-## ====== create the pressed images ====== ##
+## ====== create the beginings for pressed images ====== ##
+#
+## go back to parent directory
+# cd $ThemeDir
+#
+## duplicate the active directory
+# cp -r active pressed
+#
+## enter inactive directory
+# cd pressed
+#
+## change filenames
+##	-	must include the backslash escape or will give error
+##		(even with double quotes)
+## DOESN'T WORK (but I think it id before??)
+# rename "\-active" "\-pressed" *
+## Use instead:
+# rename "active" "pressed" *
+#
+## Run find/replace
+##	-	Will leave color codes the same, only change the GTK
+##		color pickups
+##	-	Therefor: if the theme is ever applied without colors
+##		being defined externally, there would be no difference
+##		between active and inactive colors
+##	In contrast to creating the *-inactive state images, only ONE
+##	 thing being done here:
+## 		1. change the first non-commented line of file, for
+##		example:
+## 			static char * close_active_xpm[] = {
+## 			REPLACE W-->
+## 			static char * close_pressed_xpm[] = {
+##	The colors REMAIN THE SAME - edit the actual image so it changes,
+##	rather than the colors.
+#
+# sed -i \
+# -e 's/_active_xpm/_inactive_xpm/g' \
+# *-pressed.xpm
+
+## Find and replace the color definition headers in images
+##	-	see notes in section where sed is first used, above
+##	-	This is primarily for use after images have been hand-edited
+#
+# sed -i \
+# -e 's/FIND"/REPLACE"/g' \
+# -e 's/#0000EE"/#0000EE s active_hilight_1"/g' \
+# -e 's/#000088"/#000088 s active_color_1"/g' \
+# -e 's/#000044"/#000044 s active_shadow_1"/g' \
+# -e 's/#FFFFFF"/#FFFFFF s active_text_color"/g' \
+# *-pressed.xpm
+
+
 
 
 
@@ -133,7 +186,10 @@
 ##
 ## will overwrite any existing files. add -i for interative mode
 ## which would prompt before destroying anything.
-# cp *.xpm ../
+# cd $ThemeDir
+cp active/*.xpm .
+cp inactive/*.xpm .
+cp presed/*.xpm .
 
 
 
