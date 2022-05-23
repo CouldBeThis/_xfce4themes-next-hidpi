@@ -176,20 +176,14 @@
 
 
 
-
-
-
-
-
-
 ## ====== move all files into main theme directory ====== ##
 ##
 ## will overwrite any existing files. add -i for interative mode
 ## which would prompt before destroying anything.
 # cd $ThemeDir
-cp active/*.xpm .
-cp inactive/*.xpm .
-cp presed/*.xpm .
+# cp active/*.xpm .
+# cp inactive/*.xpm .
+# cp pressed/*.xpm .
 
 
 
