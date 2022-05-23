@@ -216,12 +216,8 @@ sed -i \
 # -e 's/#FFFFFF"/#FFFFFF s active_text_color"/g' \
 # *-pressed.xpm
 
-
-
-
-
-
-
+## TODO: include generate-images-pressed.sh
+## TODO: create and include generate-images-prelight.sh
 
 
 
