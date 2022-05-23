@@ -92,14 +92,45 @@
 ## 			static char * close_active_xpm[] = {
 ## 			REPLACE W-->
 ## 			static char * close_inactive_xpm[] = {
-
+#
 # sed -i \
 # -e 's/s active_/s inactive_/g' \
 # -e 's/_active_xpm/_inactive_xpm/g' \
 # *-inactive.xpm
 
-## ====== move all files into main theme directory ====== ##
 
+## Find and replace the color definition headers in images
+##	-	must leave trailing double quote to prevent the operation
+## 		accidentaly being run more than once on the same line; the
+## 		double quote indicates the *definate* end of the line
+## 	-	must leave the -e at start of each line; it won't work if
+##		put into the main command only once
+# sed -i \
+# -e 's/FIND"/REPLACE"/g' \
+# -e 's/#0000EE"/#0000EE s active_hilight_1"/g' \
+# -e 's/#000088"/#000088 s active_color_1"/g' \
+# -e 's/#000044"/#000044 s active_shadow_1"/g' \
+# -e 's/#FFFFFF"/#FFFFFF s active_text_color"/g' \
+# *-active.xpm
+
+
+## ====== create the pressed images ====== ##
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## ====== move all files into main theme directory ====== ##
+##
 ## will overwrite any existing files. add -i for interative mode
 ## which would prompt before destroying anything.
 # cp *.xpm ../
@@ -108,17 +139,6 @@
 
 
 
-######################
-## create temporary working directory "inactive"
-
-## ~~copy all files *-active.xpm" into diretcory "inactive"~~
-
-## ~~rename all files in "inactive" to *-inactive.xpm~~
-
-## Find replace in files:
-	## _active_xpm
-	## ->
-	## _inactive_xpm
 
 
 
