@@ -36,6 +36,7 @@ full_width_title=true
 ## in the next theme, omitting this value makes a tiny but annoying space on the right and left sides of the menubar.
 button_offset=-3
 
+
 ## XFWM Versions 4.14.1 only
 ## crop the top frame border of maximized application windows.
 frame_border_top=0
