@@ -93,18 +93,16 @@
 ## 			REPLACE W-->
 ## 			static char * close_inactive_xpm[] = {
 
-sed -i \
--e 's/s active_/s inactive_/g' \
--e 's/_active_xpm/_inactive_xpm/g' \
-*-inactive.xpm
+# sed -i \
+# -e 's/s active_/s inactive_/g' \
+# -e 's/_active_xpm/_inactive_xpm/g' \
+# *-inactive.xpm
 
+## ====== move all files into main theme directory ====== ##
 
-
-## TODO: change filenames defined in files
-
-## TODO: ====== move all files into main theme directory ====== ##
-
-
+## will overwrite any existing files. add -i for interative mode
+## which would prompt before destroying anything.
+# cp *.xpm ../
 
 
 
