@@ -1,7 +1,7 @@
 ##############################################
 ## THEMERC
+## github.com/CouldBeThis/_xfce4themes-next-hidpi/
 ##############################################
-
 
 ## docs say: places a space between the right edge (top-right-active) and the button (close, hide…) when maximized.
 ## but actually spaces between right AND left edge and buttons.
@@ -25,7 +25,7 @@ title_shadow_active=false
 show_app_icon=false
 
 ## space between each button
-button_spacing=0
+button_spacing=-1
 
 ##How the pixmap are arranged in the title bar.
 ## When set to “true”, the center pixmap is repeated so that it fills the entire window width
@@ -33,7 +33,7 @@ button_spacing=0
 full_width_title=true
 
 ## shift buttons horizontally. value is relative to the corresponding application window border, not the frame border.
-button_offset=0
+button_offset=-1
 
 ## XFWM Versions 4.14.1 only
 ## crop the top frame border of maximized application windows.
@@ -43,13 +43,3 @@ frame_border_top=0
 ## documentation of this file and xfwm themes:
 ## https://wiki.xfce.org/howto/xfwm4_theme
 ##############################################
-
-
-
-# full_width_title=true
-# button_offset=-1
-# button_spacing=-1
-# active_border_color=#000000
-# inactive_border_color=#000000
-
-
