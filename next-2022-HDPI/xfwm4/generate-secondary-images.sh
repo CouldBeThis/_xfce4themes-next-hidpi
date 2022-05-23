@@ -10,20 +10,23 @@
 
 ## Find and replace the color definition headers in images
 ## Note: Verify the charecters are the same in each, as GIMP will reassign them. Change the 2nd to match the first
-	## FIND:
+	## FIND: (in plain text)
 	# " 	c #000000",
 	# ".	c #0000EE",
 	# "+	c #000088",
 	# "@	c #000044",
 	# "#	c #FFFFFF",
-	## REPLACE WITH ->
-	# ".	c #000000",
+		## FIND (same as above, but regex compliant):
+		# "\s+c #000000",\n"\.\s+c #0000EE",\n"\+\s+c #000088",\n"\@\s+c #000044",\n"\#\s+c #FFFFFF",\n
+	##
+	## REPLACE WITH (in plain text) ->
+	# " 	c #000000",
 	# ".	c #0000EE s active_hilight_1",
 	# "+	c #000088 s active_color_1",
 	# "@	c #000044 s active_shadow_1",
 	# "#	c #FFFFFF s active_text_color",
-
-
+		## REPLACE  (same as above, but regex compliant):
+		# "\ \tc #000000",\n"\.\tc #0000EE s active_hilight_1",\n"\+\tc #000088 s active_color_1",\n"\@\tc #000044 s active_shadow_1",\n"\#\tc #FFFFFF s active_text_color",\n
 
 
 
