@@ -1,11 +1,11 @@
 /* XPM */
-static char * shade_inactive_xpm[] = {
+static char * shade_active_xpm[] = {
 "32 32 5 1",
 " 	c #000000",
-".	c #0000EE s inactive_"hilight_1",
-"+	c #000088 s inactive_"color_1",
-"@	c #000044 s inactive_"shadow_1",
-"#	c #FFFFFF s inactive_"text_color",
+".	c #0000EE s active_hilight_1",
+"+	c #000088 s active_color_1",
+"@	c #000044 s active_shadow_1",
+"#	c #FFFFFF s active_text_color",
 "                                ",
 "                                ",
 "  ............................  ",

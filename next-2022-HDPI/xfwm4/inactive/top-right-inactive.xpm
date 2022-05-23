@@ -1,5 +1,5 @@
 /* XPM */
-static char * top_right_inactive_xpm[] = {
+static char * top_right_active_xpm[] = {
 "2 42 1 1",
 " 	c #000000",
 "  ",
