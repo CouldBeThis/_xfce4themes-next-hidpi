@@ -91,11 +91,11 @@
 ## 			static char * close_active_xpm[] = {
 ## 			REPLACE W-->
 ## 			static char * close_inactive_xpm[] = {
-#
-# sed -i \
-# -e 's/s active_"/s inactive_"/g' \
-# -e 's/_active_xpm"/_inactive_xpm"/g' \
-# *-inactive.xpm
+
+sed -i \
+-e 's/s active_/s inactive_"/g' \
+-e 's/_active_xpm/_inactive_xpm/g' \
+*-inactive.xpm
 
 
 
