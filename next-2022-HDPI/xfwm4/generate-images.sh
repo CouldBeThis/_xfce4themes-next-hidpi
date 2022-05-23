@@ -77,7 +77,7 @@ cd active
 ## 	-	must leave the -e at start of each line; it won't work if
 ##		put into the main command only once
 ##	-	NOTE this is duplicated for the *-pressed.xpm files below,
-##	-	any changes shouldbe updated there as well.
+##	-	any changes should be updated there as well.
 echo " * adding GTK color pickup to known colors (active)"
 sed -i \
 -e 's/FIND"/REPLACE"/g' \
