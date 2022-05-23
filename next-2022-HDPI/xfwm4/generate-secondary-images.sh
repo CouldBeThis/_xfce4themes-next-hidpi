@@ -115,10 +115,10 @@ pwd
 ##	-	must include the backslash escape or will give error
 ##		(even with double quotes)
 #
-exa
+# exa
 echo " * rename all these files from *-active.xpm to *-inactive.xpm"
 rename "active" "inactive" *
-exa
+# exa
 
 ## Run find/replace
 ##	-	Will leave color codes the same, only change the GTK
@@ -173,10 +173,10 @@ cd pressed
 pwd
 
 ## change filenames
-exa
+# exa
 echo " * rename all these files from *-active.xpm to *-pressed.xpm"
 rename "active" "pressed" *
-exa
+# exa
 #
 ## Run find/replace
 ##	-	Will leave color codes the same, only change the GTK
@@ -225,14 +225,16 @@ sed -i \
 ## which would prompt before destroying anything.
 echo " * Returning to parent directory"
 cd $ThemeDir
-echo " * Copying files from active/ into main theme directory"
+echo " * Removing existing files ending in -active.xpm, -inactive.xpm and -pressed.xpm"
+trash *-active.xpm
+trash *-inactive.xpm
+trash *-pressed.xpm
+echo " * Copying files from active/, inactive/ and pressed/ into main theme directory"
 cp active/*.xpm .
-echo " * Copying files from inactive/ into main theme directory"
 cp inactive/*.xpm .
-echo " * Copying files from pressed/ into main theme directory"
 cp pressed/*.xpm .
 
-
+echo done!
 
 
 
